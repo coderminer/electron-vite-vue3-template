@@ -1,34 +1,8 @@
 # Vite Electron Builder Boilerplate
 
-----
-
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua)
-----
-
-[![GitHub issues by-label](https://img.shields.io/github/issues/cawa-93/vite-electron-builder/help%20wanted?label=issues%20need%20help&logo=github)](https://github.com/cawa-93/vite-electron-builder/issues?q=label%3A%22help+wanted%22+is%3Aopen+is%3Aissue)
-[![Required Node.JS >= v16.13](https://img.shields.io/static/v1?label=node&message=%3E=16.13&logo=node.js&color)](https://nodejs.org/about/releases/)
-[![Required npm >= v8.1](https://img.shields.io/static/v1?label=npm&message=%3E=8.1&logo=npm&color)](https://github.com/npm/cli/releases)
-
-> Vite+Electron = 🔥
-
-This is template for secure electron applications. Written following the latest safety requirements, recommendations and best practices.
-
-Under the hood is used [Vite] — superfast, nextgen bundler, and [electron-builder] for compilation.
+基于Electron,Vite,Vue3,TypeScript,Tailwindcss的模板工程,在 [vite-electron-builder](https://github.com/cawa-93/vite-electron-builder)的基础上，添加了Tailwindcss的支持。
 
 
-## Get started
-
-Follow these steps to get started with this template:
-
-1. Click the **[Use this template](https://github.com/cawa-93/vite-electron-builder/generate)** button (you must be logged in) or just clone this repo.
-2. If you want to use another package manager don't forget to edit [`.github/workflows`](/.github/workflows) -- it uses `npm` by default.
-
-That's all you need. 😉
-
-**Note**: This template uses npm v7 feature — [**Installing Peer Dependencies Automatically**](https://github.com/npm/rfcs/blob/latest/implemented/0025-install-peer-deps.md). If you are using a different package manager, you may need to install some peerDependencies manually.
-
-
-**Note**: Find more useful forks [here](https://github.com/cawa-93/vite-electron-builder/discussions/categories/forks).
 
 
 ## Features

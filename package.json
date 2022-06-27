@@ -32,7 +32,8 @@
     "typecheck": "npm run typecheck:main && npm run typecheck:preload && npm run typecheck:renderer",
     "postinstall": "cross-env ELECTRON_RUN_AS_NODE=1 npx --no-install electron ./scripts/update-electron-vendors.js ",
     "precompile": "cross-env MODE=production npm run build && electron-builder build --config .electron-builder.config.js --config.asar=true",
-    "pack": "rm -rf dist && npm run precompile"
+    "pack": "rm -rf dist && npm run precompile",
+    "dev": "npm run watch"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.28.0",

@@ -1,23 +1,18 @@
 <script lang="ts" setup>
-import ReactiveCounter from '/@/components/ReactiveCounter.vue';
-import ReactiveHash from '/@/components/ReactiveHash.vue';
-import ElectronVersions from '/@/components/ElectronVersions.vue';
+import ReactiveCounter from '/@/components/ReactiveCounter.vue'
+import ReactiveHash from '/@/components/ReactiveHash.vue'
+import ElectronVersions from '/@/components/ElectronVersions.vue'
 </script>
 
 <template>
-  <img
-    alt="Vue logo"
-    src="../assets/logo.svg"
-    width="150"
-  >
+  <img alt="Vue logo" src="../assets/logo.svg" width="150" />
 
   <p>
-    For a guide and recipes on how to configure / customize this project,<br>
+    For a guide and recipes on how to configure / customize this project,<br />
     check out the
-    <a
-      href="https://github.com/cawa-93/vite-electron-builder"
-      target="_blank"
-    >vite-electron-builder documentation</a>.
+    <a href="https://github.com/cawa-93/vite-electron-builder" target="_blank"
+      >vite-electron-builder documentation</a
+    >
   </p>
 
   <fieldset>

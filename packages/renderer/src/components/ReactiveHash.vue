@@ -1,31 +1,24 @@
 <script lang="ts" setup>
-import {computed, ref} from 'vue';
-import {sha256sum} from '#preload';
+import { computed, ref } from 'vue'
+import { sha256sum } from '#preload'
 
-const rawString = ref('Hello World');
+const rawString = ref('Hello World')
 /**
  * window.nodeCrypto was exposed from {@link module:preload}
  */
-const hashedString = computed(() => sha256sum(rawString.value));
+const hashedString = computed(() => sha256sum(rawString.value))
 </script>
 
 <template>
   <label>
     Raw value
-    <input
-      v-model="rawString"
-      type="text"
-    >
+    <input v-model="rawString" type="text" />
   </label>
-  <br>
+  <br />
   <label>
     Hashed by node:crypto
-    <input
-      v-model="hashedString"
-      type="text"
-      readonly
-    >
+    <input v-model="hashedString" type="text" readonly />
   </label>
-  <br><br>
+  <br /><br />
   <code>packages/renderer/src/components/ReactiveHash.vue</code>
 </template>

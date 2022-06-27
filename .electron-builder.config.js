@@ -9,14 +9,32 @@ if (process.env.VITE_APP_VERSION === undefined) {
  */
 const config = {
   directories: {
-    output: 'dist',
-    buildResources: 'buildResources',
+    output: "dist",
+    buildResources: "buildResources",
   },
-  files: [
-    'packages/**/dist/**',
-  ],
+  files: ["packages/**/dist/**"],
   extraMetadata: {
     version: process.env.VITE_APP_VERSION,
+  },
+  compression: "maximum",
+  nsis: {
+    oneClick: false,
+    perMachine: true,
+    allowElevation: false,
+    createDesktopShortcut: "always",
+    createStartMenuShortcut: true,
+    allowToChangeInstallationDirectory: true,
+    shortcutName: "${productName}",
+    artifactName: "${productName}-v${version}-${os}-${arch}.${ext}",
+    deleteAppDataOnUninstall: true,
+  },
+  win: {
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64"],
+      },
+    ],
   },
 };
 
